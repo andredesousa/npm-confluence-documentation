@@ -3,7 +3,6 @@ version: '3.7'
 services:
   db:
     image: postgres:14.2
-    restart: always
     container_name: postgres
     ports:
       - "5432:5432"
@@ -15,7 +14,6 @@ services:
       - POSTGRES_DB=confluence
   confluence:
     image: atlassian/confluence-server:7.18.3
-    restart: always
     container_name: confluence
     ports:
       - "8090:8090"
