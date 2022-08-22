@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:14.2
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - "~/confluence/data:/var/lib/postgresql/data"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=confluence
+  confluence:
+    image: atlassian/confluence-server:7.18.3
+    container_name: confluence
+    ports:
+      - "8090:8090"
+      - "8091:8091"
+    volumes:
+      - "~/confluence/home:/var/atlassian/application-data/confluence"
+    links:
+      - "db:db"
+    depends_on:
+      - db

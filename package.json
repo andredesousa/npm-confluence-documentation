@@ -1,0 +1,30 @@
+{
+  "name": "npm-confluence-documentation",
+  "version": "1.0.0",
+  "description": "Technical Documentation as Code for Confluence",
+  "scripts": {
+    "lint": "textlint docs/**/*.confluence",
+    "lint:fix": "textlint docs/**/*.confluence --fix",
+    "publish": "confluence-site info"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@textlint/textlint-plugin-text": "^12.2.1",
+    "confluence-site": "^4.0.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^13.0.3",
+    "textlint": "^12.2.1",
+    "textlint-rule-apostrophe": "^2.0.0",
+    "textlint-rule-editorconfig": "^1.0.3",
+    "textlint-rule-en-spell": "^1.2.4",
+    "textlint-rule-stop-words": "^3.0.1",
+    "textlint-rule-write-good": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  }
+}

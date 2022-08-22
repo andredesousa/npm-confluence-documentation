@@ -1,0 +1,17 @@
+home:
+  name: "The first"
+  uri: pages/first.confluence
+  attachments:
+    - name: "Notation Guide.pdf"
+      comment: "Notation Guide"
+      contentType: "application/pdf"
+      version: 1
+  children:
+    - name: "The second"
+      uri: pages/second.confluence
+      children:
+        - name: "The third"
+          uri: pages/third.confluence
+  labels:
+    - Guidelines
+    - Best practices

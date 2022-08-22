@@ -1,0 +1,18 @@
+{
+  "filters": {},
+  "rules": {
+    "apostrophe": true,
+    "editorconfig": true,
+    "en-spell": true,
+    "write-good": true,
+    "stop-words": true
+  },
+  "plugins": {
+    "@textlint/text": {
+      "extensions": [
+        ".confluence",
+        ".wiki"
+      ]
+    }
+  }
+}
