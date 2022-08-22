@@ -1,0 +1,12 @@
+{
+  "localhost": {
+    "path": "/rest/api",
+    "protocol": "http:",
+    "host": "localhost",
+    "port": 8090,
+    "spaceId": "FRON",
+    "parentPageTitle": "My Documentation",
+    "sitePath": "docs/site-map.yaml",
+    "serverId": "localhost"
+  }
+}

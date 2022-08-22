@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "textlint docs/**/*.confluence",
     "lint:fix": "textlint docs/**/*.confluence --fix",
-    "publish": "confluence-site info"
+    "info": "confluence-site info",
+    "publish": "confluence-site deploy"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",

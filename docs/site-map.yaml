@@ -2,7 +2,7 @@ home:
   name: "The first"
   uri: pages/first.confluence
   attachments:
-    - name: "Notation Guide.pdf"
+    - name: "attachments/Notation Guide.pdf"
       comment: "Notation Guide"
       contentType: "application/pdf"
       version: 1
