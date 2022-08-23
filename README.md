@@ -1,6 +1,8 @@
 # Documentation as Code
 
-This project is a skeleton for writing technical documentation and publishing it to Confluence.
+This project is a skeleton for writing technical documentation and publishing it to [Confluence](https://www.atlassian.com/software/confluence).
+This project allows documentation written in Markdown and Confluence Wiki, and versioned directly with the documented code base to be published to a Confluence space.
+It manages included resources as Confluence attachments and ensures that only content modified since the last publication is again re-published.
 
 ## How to Contribute
 
@@ -45,9 +47,6 @@ After your pull request is merged, you can safely delete your branch.
 
 Publishing in Confluence means making your versioned content available to its audience within Confluence.
 
-This project allows documentation written in Markdown and Confluence Wiki, and versioned directly with the documented code base to be published to a Confluence space.
-It converts the resulting HTML output to HTML compatible with Confluence, manages included resources as Confluence attachments and ensures that only content modified since the last publication is again re-published.
-
 To publish all Confluence pages, you can use `npm run publish` command.
 All pages described in the [Site Map](./docs/site-map.yaml) will be publish in Confluence.
 For more details, you can read [Confluence Site Publisher](https://github.com/bsorrentino/confluence-site-publisher) documentation.
@@ -55,7 +54,6 @@ For more details, you can read [Confluence Site Publisher](https://github.com/bs
 Alternatively, you can use a local instance of Confluence.
 You can use `docker-compose up -d` command to start a local instance of Confluence Server.
 Please note that you need to subscribe to a free trial plan to use Confluence Server.
-
 
 ## Commit Messages Convention
 

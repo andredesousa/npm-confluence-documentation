@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Technical Documentation as Code for Confluence",
   "scripts": {
+    "start": "docker-compose up",
     "lint": "textlint docs/**/*.confluence",
     "lint:fix": "textlint docs/**/*.confluence --fix",
     "info": "confluence-site info",
-    "publish": "confluence-site deploy"
+    "publish": "confluence-site deploy",
+    "delete": "confluence-site delete"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",

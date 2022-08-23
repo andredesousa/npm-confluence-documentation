@@ -22,8 +22,6 @@ h3. Supported Formats
 
 h3. Notes
 
-{quote}Currently only *xmlrpc* protocol is supported (_REST coming soon_)
-
 {quote}h2. Install
 
 {code:}
@@ -45,7 +43,7 @@ info                // show configuration
 
 Options:
 
- --serverid     // it is the credentials’ profile.
+ --serverid     // credentials’ profile.
  --config    // force reconfiguration
 {code}
 
@@ -56,8 +54,8 @@ h3. init
 Initialize (create/update) the configuration. The configuration is stored into file {{./config.json}}
 
 ||key||description
-|serverId|It is the credentials&#39; profile. Provided from command line option {{--serverid}}|
-|protocol|`http/https`. This information is deducted from url|
+|serverId|The credentials&#39; profile. Provided from command line option {{--serverid}}|
+|protocol|`HTTP(S)`. This information is deducted from url|
 |host|host name or ip address. This information is deducted from url|
 |port|port number. This information is deducted from url|
 |path|url path. This information is deducted from url|
